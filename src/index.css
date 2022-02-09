@@ -1,0 +1,10 @@
+body{
+    font-family: Roboto;
+    background-color: rgba(26, 25, 25, 0.671);
+    color: white;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-weight: 200;
+}
