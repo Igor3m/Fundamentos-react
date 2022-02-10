@@ -10,6 +10,12 @@ import Familia from './components/basicos/Familia'
 import FamiliaMembro from './components/basicos/FamiliaMembro'
 import ListaAlunos from './components/Repeticao/listaAlunos'
 import TabelaProdutos from './components/Repeticao/TebelaProdutos'
+import ParOuImpar from './components/Condicional/ParOuImpar'
+import UsuarioInfo from './components/Condicional/usuarioInfo'
+import DiretaPai from './components/comunicação/DiretaPai'
+import IndiretaPai from './components/comunicação/IndiretaPai'
+import Input from './components/formulario/Input'
+import Contador from './components/contador/Cont'
 
 export default () => 
     
@@ -17,6 +23,22 @@ export default () =>
             <h1>Fundamentos React</h1>
 
             <div className='Exercicios'>
+            <Card titulo = '#12 - Contador' color='#fffff'>
+               <Contador numeroInicial={10}></Contador>
+            </Card>
+            <Card titulo = '#11 - Componente Controlado (Input)' color='#E45F56'>
+               <Input></Input>
+            </Card>
+            <Card titulo = '#10 - Comunicação Indireta' color='#8BAD39'>
+               <IndiretaPai></IndiretaPai>
+            </Card>
+            <Card titulo = '#9 - Comunicação Direta' color='#59323C'>
+               <DiretaPai></DiretaPai>
+            </Card>
+            <Card titulo = '#8 - Par ou Impar' color='#982395'>
+               <ParOuImpar numero={20}></ParOuImpar>
+               <UsuarioInfo usuario={{nome: 'Fernando'}}></UsuarioInfo>
+            </Card>
             <Card titulo = '#7 - Tabela de Produtos' color='#3A9AD9'>
                <TabelaProdutos></TabelaProdutos>
             </Card>
